@@ -2,9 +2,9 @@
 
 * Let's do some maths
 
-A correct mathematical proof of X is a rock solid evidence that X is true. But can you trust the proof?!
+A correct mathematical proof of X is a rock solid evidence that X is true. But can you trust the correctness of the proof?!
 
-A recent programming language from Microsoft Research called [[http://leanprover.github.io/][Lean]]  allows you to break down the proof into small pieces -- all the way down into the most basic truths -- and test each piece rigorously by putting it through its trusted kernel.
+A recent programming language from Microsoft Research called [[http://leanprover.github.io/][Lean]] allows you to break down the proof into small pieces -- all the way down into the most basic truths -- and test each piece rigorously by putting it through its trusted kernel.
 
 One way to prove a theorem is by explicitly constructing what is known as a "proof term". You can read more about these in the official [[https://leanprover.github.io/introduction_to_lean/][lean tutorial]].
 
@@ -41,7 +41,7 @@ example : 2 + 2 = 2 * 2 := add2_calc 2
 -- END
 #+END_SRC
 
-If you're a bit lazy, and can't be asked to figure out all necessary transformations, you can use the tactics:
+If you're a bit lazy, and can't be asked to figure out all necessary transformations in painful detail, you can use the rewrite tactic:
 
 #+BEGIN_SRC lean
 -- BEGIN
@@ -56,7 +56,7 @@ example : 2 + 2 = 2 * 2 := add2_tact 2
 -- END
 #+END_SRC
 
-Which in fact can be pretty compact indeed:
+Which can be written more compactly:
 
 #+BEGIN_SRC lean
 -- BEGIN
@@ -69,7 +69,7 @@ example : 2 + 2 = 2 * 2 := add2_tact2 2
 -- END
 #+END_SRC
 
-Or even a bit more compact :)
+Another approach, and even shorter, would be to use the simplifier tactic:
 
 #+BEGIN_SRC lean
 -- BEGIN

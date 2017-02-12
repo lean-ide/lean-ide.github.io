@@ -24,7 +24,7 @@ example : 2 + 2 = 2 * 2 := add2_term 2
 -- END
 #+END_SRC
 
-BTW, lean compiles to asm.js, so you can run the proof above directly in your browser! If you see the word "Done" in the right bottom pane, then your prove compiles, and it is correct.
+BTW, lean compiles to asm.js, so you can run the proof above directly in your browser! If you see the word "Done" in the right bottom pane, then your proof compiles, and it is correct.
 
 Constructing the proof term explictly can be a little verbose and repetitive. Lean offers handy sugar -- the calc environment!
 
@@ -93,7 +93,7 @@ example : 2 + 2 = 2 * 2 := rfl
 
 * Want more?
 
-If you're interested in mathematical proofs, and how to write them in Lean prof. Jeremy Avigad has an excellent course in mathematical logic: [[https://avigad.github.io/logic_and_proof/][Logic and proof]].
+If you're interested in mathematical proofs, and how to write them in Lean Prof. Jeremy Avigad has an excellent course in mathematical logic: [[https://avigad.github.io/logic_and_proof/][Logic and proof]].
 
 If you know some maths already, and you want to just dive in into formal proof checking, you can check out [[https://leanprover.github.io/introduction_to_lean/][the lean tutorial]].
 
